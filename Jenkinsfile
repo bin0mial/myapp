@@ -11,9 +11,9 @@ pipeline {
                 branch "fix-*"
             }
             steps {
-                sh ```
+                sh '''
                     cat README.md
-                ```
+                '''
             }
         }
     }
