@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "linux"}
+    agent {label "server1"}
     stages {
         stage('Hello') {
             steps {
@@ -14,6 +14,11 @@ pipeline {
                 sh '''
                     cat README.md
                 '''
+            }
+        }
+        stage('install dependencies') {
+            steps {
+                sh ''
             }
         }
     }
