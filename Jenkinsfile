@@ -18,7 +18,12 @@ pipeline {
         }
         stage('install dependencies') {
             steps {
-                sh ''
+                sh 'npm i'
+            }
+        }
+        stage('start server') {
+            steps {
+                sh 'systemctl restart myapp'
             }
         }
     }
