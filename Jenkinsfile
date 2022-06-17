@@ -23,7 +23,7 @@ pipeline {
         }
         stage('start server') {
             steps {
-                sh 'systemctl restart myapp'
+                sh 'sudo systemctl restart myapp'
             }
         }
     }
